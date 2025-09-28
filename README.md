@@ -1,5 +1,5 @@
 # docker-caddy-route53
 
-A Docker image for Caddy v2 with the dns.providers.route53 module included.
+A Docker image for Caddy v2 with dns.providers.route53 and caddy-security modules included.
 
     docker image pull ghcr.io/zackslash/caddy-route53
