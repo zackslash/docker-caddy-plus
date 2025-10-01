@@ -1,10 +1,6 @@
 FROM caddy:2.10.2-builder AS builder
 
 ENV GOFLAGS=-mod=mod
-RUN go clean -modcache
-
-# Force Go to download the beta version of Route53
-RUN go get github.com/caddy-dns/route53@v1.6.0-beta.1
 
 RUN xcaddy build v2.10.2 \
     --with github.com/caddy-dns/route53@v1.6.0-beta.1 \
