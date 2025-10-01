@@ -5,7 +5,7 @@ go 1.25
 require (
 	github.com/caddy-dns/route53 v1.5.1
 	github.com/caddyserver/cache-handler v0.16.0
-	github.com/caddyserver/caddy/v2 v2.10.0
+	github.com/caddyserver/caddy/v2 v2.10.2
 	github.com/darkweak/storages/go-redis/caddy v0.0.16
 	github.com/greenpau/caddy-security v1.1.31
 )
