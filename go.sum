@@ -98,8 +98,8 @@ github.com/bsm/ginkgo/v2 v2.12.0/go.mod h1:SwYbGRRDovPVboqFv0tPTcG1sN61LM1Z4ARdb
 github.com/bsm/gomega v1.27.10 h1:yeMWxP2pV2fG3FgAODIY8EiRE3dy0aeFYt4l7wh6yKA=
 github.com/bsm/gomega v1.27.10/go.mod h1:JyEr/xRbxbtgWNi8tIEVPUYZ5Dzef52k01W3YH0H+O0=
 github.com/buger/jsonparser v0.0.0-20181115193947-bf1c66bbce23/go.mod h1:bbYlZJ7hK1yFx9hf58LP0zeX7UjIGs20ufpu3evjr+s=
-github.com/caddy-dns/route53 v1.6.0-beta.1 h1:9WIuBpBsMKW8Lh1mpmMiXB6qBgPFbcftCsPuxxDCYeE=
-github.com/caddy-dns/route53 v1.6.0-beta.1/go.mod h1:6GcOv4NbezPYwwohOGU3FdKnBYW2SDSOrSvshQgexGs=
+github.com/caddy-dns/route53 v1.6.0-beta.2 h1:wgCVnVqFXBIjpkkmvHs8h1W0SgYDoUAtJXANUAJ08KE=
+github.com/caddy-dns/route53 v1.6.0-beta.2/go.mod h1:bD5C//dHdBv+5lmDStWQdCH/Kzo2hktRkvQplqPyuUQ=
 github.com/caddyserver/cache-handler v0.16.0 h1:0Tl7yXwxpT1Hsp9bqIdB5Uhh4oOyy+z1V0MIjmVm1yI=
 github.com/caddyserver/cache-handler v0.16.0/go.mod h1:HpKlL1VXK4+A5bJb4EcmVzqORD5DurTGJwWtvCKWRVw=
 github.com/caddyserver/caddy/v2 v2.10.2 h1:g/gTYjGMD0dec+UgMw8SnfmJ3I9+M2TdvoRL/Ovu6U8=
@@ -322,8 +322,8 @@ github.com/kylelemons/godebug v1.1.0 h1:RPNrshWIDI6G2gRW9EHilWtl7Z6Sb1BR0xunSBf0
 github.com/kylelemons/godebug v1.1.0/go.mod h1:9/0rRGxNHcop5bhtWyNeEfOS8JIWk580+fNqagV/RAw=
 github.com/libdns/libdns v1.1.1 h1:wPrHrXILoSHKWJKGd0EiAVmiJbFShguILTg9leS/P/U=
 github.com/libdns/libdns v1.1.1/go.mod h1:4Bj9+5CQiNMVGf87wjX4CY3HQJypUHRuLvlsfsZqLWQ=
-github.com/libdns/route53 v1.6.0-beta.1 h1:YvZBRma5Di8QJt3a/XiqOjGqL+pGbJ9niD+cul2o3Vc=
-github.com/libdns/route53 v1.6.0-beta.1/go.mod h1:7QGcw/2J0VxcVwHsPYpuo1I6IJLHy77bbOvi1BVK3eE=
+github.com/libdns/route53 v1.6.0-beta.2 h1:ogxbuAC3EWX3j6I+3Bq766NVuZjgbhaF7mhFsj6AXrU=
+github.com/libdns/route53 v1.6.0-beta.2/go.mod h1:7QGcw/2J0VxcVwHsPYpuo1I6IJLHy77bbOvi1BVK3eE=
 github.com/lunixbochs/vtclean v1.0.0/go.mod h1:pHhQNgMf3btfWnGBVipUOjRYhoOsdGqdm/+2c2E2WMI=
 github.com/magiconair/properties v1.8.0/go.mod h1:PppfXfuXeibc/6YijjN8zIbojt8czPbwD3XqdrwzmxQ=
 github.com/mailru/easyjson v0.0.0-20190312143242-1de009706dbe/go.mod h1:C1wdFJiN94OJF2b5HbByQZoLdCWB1Yqtg26g4irojpc=
