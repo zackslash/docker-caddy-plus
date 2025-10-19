@@ -31,7 +31,7 @@ jobs:
         with:
           cache-from: type=gha
           cache-to: type=gha,mode=max
-          tags: ${{ env.image_name }}:latest
+          tags: ${{ env.image_name }}:${{ github.sha }}
 
       - name: Log in to GitHub container registry
         if: github.event_name == 'push' || github.event_name == 'release'
@@ -41,15 +41,15 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
 
-      - name: Push latest image to registry
+      - name: Push SHA tagged image to registry
         if: github.event_name == 'push'
         uses: docker/build-push-action@v6
         with:
           cache-from: type=gha
           push: true
-          tags: ${{ env.image_name }}:latest
+          tags: ${{ env.image_name }}:${{ github.sha }}
 
-      - name: Tag and push release image to registry
+      - name: Push release image with latest tag
         if: github.event_name == 'release'
         uses: docker/build-push-action@v6
         with:
