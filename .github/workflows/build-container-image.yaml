@@ -57,7 +57,7 @@ jobs:
           cache-from: type=gha
           push: true
           tags: |
-            ${{ env.image_name }}:latest
             ${{ env.image_name }}:${{ github.event.release.tag_name }}
+            ${{ env.image_name }}:latest
           provenance: false
           outputs: type=image,name=${{ env.image_name }},push-by-digest=false

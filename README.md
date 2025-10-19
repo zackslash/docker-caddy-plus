@@ -22,7 +22,7 @@ This image includes the following Caddy modules:
 Pull the image from GitHub Container Registry:
 
 ```bash
-docker pull ghcr.io/zackslash/caddy-route53
+docker pull ghcr.io/zackslash/caddy-plus:latest
 ```
 
 ### Basic Docker Run
@@ -34,7 +34,7 @@ docker run -d \
   -v $(pwd)/Caddyfile:/etc/caddy/Caddyfile \
   -v caddy_data:/data \
   -v caddy_config:/config \
-  ghcr.io/zackslash/caddy-route53
+  ghcr.io/zackslash/caddy-plus:latest
 ```
 
 ### Docker Compose Example
@@ -44,7 +44,7 @@ version: '3.8'
 
 services:
   caddy:
-    image: ghcr.io/zackslash/caddy-route53
+    image: ghcr.io/zackslash/caddy-plus:latest
     restart: unless-stopped
     ports:
       - "80:80"
