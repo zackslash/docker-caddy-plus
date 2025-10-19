@@ -2,7 +2,7 @@
 
 services:
   caddy:
-    image: ghcr.io/williamjacksn/caddy-route53
+    image: ghcr.io/zackslash/caddy-plus
     environment:
       AWS_ACCESS_KEY_ID: (set in compose.override.yaml)
       AWS_SECRET_ACCESS_KEY: (set in compose.override.yaml)

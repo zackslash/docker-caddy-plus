@@ -13,7 +13,7 @@ on:
   workflow_dispatch:
 
 env:
-  image_name: ghcr.io/${{ github.repository_owner }}/caddy-route53
+  image_name: ghcr.io/${{ github.repository_owner }}/caddy-plus
 
 jobs:
   build:
