@@ -3,7 +3,7 @@ module github.com/zackslash/docker-caddy-route53
 go 1.25.0
 
 require (
-	github.com/caddy-dns/cloudflare v0.2.2-0.20250923141955-a14840b68f26
+	github.com/caddy-dns/cloudflare v0.2.2
 	github.com/caddy-dns/route53 v1.6.0
 	github.com/caddyserver/cache-handler v0.16.0
 	github.com/caddyserver/caddy/v2 v2.10.2
@@ -94,7 +94,7 @@ require (
 	github.com/jonboulle/clockwork v0.5.0 // indirect
 	github.com/klauspost/compress v1.18.0 // indirect
 	github.com/klauspost/cpuid/v2 v2.3.0 // indirect
-	github.com/libdns/cloudflare v0.2.1 // indirect
+	github.com/libdns/cloudflare v0.2.2 // indirect
 	github.com/libdns/libdns v1.1.1 // indirect
 	github.com/libdns/route53 v1.6.0 // indirect
 	github.com/manifoldco/promptui v0.9.0 // indirect
