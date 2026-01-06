@@ -7,7 +7,7 @@ require (
 	github.com/caddy-dns/route53 v1.6.0
 	github.com/caddyserver/cache-handler v0.16.0
 	github.com/caddyserver/caddy/v2 v2.10.2
-	github.com/darkweak/storages/go-redis/caddy v0.0.16
+	github.com/darkweak/storages/go-redis/caddy v0.0.17
 	github.com/greenpau/caddy-security v1.1.31
 )
 
@@ -56,8 +56,8 @@ require (
 	github.com/crewjam/saml v0.4.14 // indirect
 	github.com/darkweak/go-esi v0.0.5 // indirect
 	github.com/darkweak/souin v1.7.7 // indirect
-	github.com/darkweak/storages/core v0.0.16 // indirect
-	github.com/darkweak/storages/go-redis v0.0.16 // indirect
+	github.com/darkweak/storages/core v0.0.17 // indirect
+	github.com/darkweak/storages/go-redis v0.0.17 // indirect
 	github.com/dgraph-io/badger v1.6.2 // indirect
 	github.com/dgraph-io/badger/v2 v2.2007.4 // indirect
 	github.com/dgraph-io/ristretto v0.2.0 // indirect
@@ -109,7 +109,7 @@ require (
 	github.com/mitchellh/reflectwalk v1.0.2 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
 	github.com/pbnjay/memory v0.0.0-20210728143218-7b4eea64cf58 // indirect
-	github.com/pierrec/lz4/v4 v4.1.22 // indirect
+	github.com/pierrec/lz4/v4 v4.1.23 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pquerna/cachecontrol v0.2.0 // indirect
 	github.com/prometheus/client_golang v1.23.0 // indirect
@@ -118,7 +118,7 @@ require (
 	github.com/prometheus/procfs v0.16.1 // indirect
 	github.com/quic-go/qpack v0.5.1 // indirect
 	github.com/quic-go/quic-go v0.54.1 // indirect
-	github.com/redis/go-redis/v9 v9.14.0 // indirect
+	github.com/redis/go-redis/v9 v9.17.2 // indirect
 	github.com/rs/xid v1.6.0 // indirect
 	github.com/russellhaering/goxmldsig v1.5.0 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
