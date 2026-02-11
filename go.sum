@@ -100,8 +100,8 @@ github.com/bsm/ginkgo/v2 v2.12.0/go.mod h1:SwYbGRRDovPVboqFv0tPTcG1sN61LM1Z4ARdb
 github.com/bsm/gomega v1.27.10 h1:yeMWxP2pV2fG3FgAODIY8EiRE3dy0aeFYt4l7wh6yKA=
 github.com/bsm/gomega v1.27.10/go.mod h1:JyEr/xRbxbtgWNi8tIEVPUYZ5Dzef52k01W3YH0H+O0=
 github.com/buger/jsonparser v0.0.0-20181115193947-bf1c66bbce23/go.mod h1:bbYlZJ7hK1yFx9hf58LP0zeX7UjIGs20ufpu3evjr+s=
-github.com/caddy-dns/cloudflare v0.2.2 h1:JxMnwOAtmDXVpi3A4hnsjm2kOg5ip9vz1c3fdbHctlU=
-github.com/caddy-dns/cloudflare v0.2.2/go.mod h1:Rge8GoKEa65RIUd1GQ9DmOmnjD9FMztz5yiaKvf351E=
+github.com/caddy-dns/cloudflare v0.2.3 h1:4JOrCP/9ivaMyNmZiJtBjHo0pTtxczZT0nB3sQ9G608=
+github.com/caddy-dns/cloudflare v0.2.3/go.mod h1:Rge8GoKEa65RIUd1GQ9DmOmnjD9FMztz5yiaKvf351E=
 github.com/caddy-dns/route53 v1.6.0 h1:QevgBx/ErQAHhRpw4fLYiMkBbHjFDRz1Rb+d5GwJIig=
 github.com/caddy-dns/route53 v1.6.0/go.mod h1:aGF/zOJeIYqhDNiMhTL6AWYJ1QkXdy2lcENNtzaOjig=
 github.com/caddyserver/cache-handler v0.16.0 h1:0Tl7yXwxpT1Hsp9bqIdB5Uhh4oOyy+z1V0MIjmVm1yI=
