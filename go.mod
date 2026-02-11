@@ -10,7 +10,7 @@ replace (
 )
 
 require (
-	github.com/caddy-dns/cloudflare v0.2.2
+	github.com/caddy-dns/cloudflare v0.2.3
 	github.com/caddy-dns/route53 v1.6.0
 	github.com/caddyserver/cache-handler v0.16.0
 	github.com/caddyserver/caddy/v2 v2.10.2
