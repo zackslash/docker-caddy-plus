@@ -14,7 +14,7 @@ require (
 	github.com/caddy-dns/route53 v1.6.0
 	github.com/caddyserver/cache-handler v0.16.0
 	github.com/caddyserver/caddy/v2 v2.10.2
-	github.com/darkweak/storages/go-redis/caddy v0.0.17
+	github.com/darkweak/storages/go-redis/caddy v0.0.18
 	github.com/greenpau/caddy-security v1.1.31
 )
 
@@ -64,8 +64,8 @@ require (
 	github.com/crewjam/saml v0.4.14 // indirect
 	github.com/darkweak/go-esi v0.0.5 // indirect
 	github.com/darkweak/souin v1.7.7 // indirect
-	github.com/darkweak/storages/core v0.0.17 // indirect
-	github.com/darkweak/storages/go-redis v0.0.17 // indirect
+	github.com/darkweak/storages/core v0.0.18 // indirect
+	github.com/darkweak/storages/go-redis v0.0.18 // indirect
 	github.com/dgraph-io/badger v1.6.2 // indirect
 	github.com/dgraph-io/badger/v2 v2.2007.4 // indirect
 	github.com/dgraph-io/ristretto v0.2.0 // indirect
