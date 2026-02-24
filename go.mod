@@ -58,7 +58,6 @@ require (
 	github.com/cloudflare/circl v1.6.3 // indirect
 	github.com/coreos/go-oidc/v3 v3.17.0 // indirect
 	github.com/cpuguy83/go-md2man/v2 v2.0.7 // indirect
-	github.com/crewjam/httperr v0.2.0 // indirect
 	github.com/crewjam/saml v0.5.1 // indirect
 	github.com/darkweak/go-esi v0.0.5 // indirect
 	github.com/darkweak/souin v1.7.7 // indirect
