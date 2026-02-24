@@ -1,4 +1,4 @@
-FROM caddy:2.10.2-builder AS builder
+FROM caddy:2.11.1-builder AS builder
 
 ENV GOFLAGS=-mod=mod
 
@@ -11,7 +11,7 @@ RUN xcaddy build v2.10.2 \
     --replace github.com/slackhq/nebula@v1.9.5=github.com/slackhq/nebula@v1.10.3 \
     --replace github.com/smallstep/certificates@v0.28.4=github.com/smallstep/certificates@v0.29.0
 
-FROM caddy:2.10.2
+FROM caddy:2.11.1
 
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
 
