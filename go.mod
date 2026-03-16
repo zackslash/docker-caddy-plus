@@ -1,13 +1,13 @@
 module github.com/zackslash/docker-caddy-route53
 
-go 1.26.0
+go 1.26.1
 
 require (
 	github.com/caddy-dns/cloudflare v0.2.3
 	github.com/caddy-dns/route53 v1.6.0
 	github.com/caddyserver/cache-handler v0.16.0
 	github.com/caddyserver/caddy/v2 v2.11.2
-	github.com/darkweak/storages/go-redis/caddy v0.0.18
+	github.com/darkweak/storages/go-redis/caddy v0.0.19
 	github.com/greenpau/caddy-security v1.1.45
 )
 
@@ -62,8 +62,8 @@ require (
 	github.com/crewjam/saml v0.5.1 // indirect
 	github.com/darkweak/go-esi v0.0.5 // indirect
 	github.com/darkweak/souin v1.7.7 // indirect
-	github.com/darkweak/storages/core v0.0.18 // indirect
-	github.com/darkweak/storages/go-redis v0.0.18 // indirect
+	github.com/darkweak/storages/core v0.0.19 // indirect
+	github.com/darkweak/storages/go-redis v0.0.19 // indirect
 	github.com/dgraph-io/badger v1.6.2 // indirect
 	github.com/dgraph-io/badger/v2 v2.2007.4 // indirect
 	github.com/dgraph-io/ristretto v0.2.0 // indirect
