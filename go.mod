@@ -8,7 +8,7 @@ require (
 	github.com/caddyserver/cache-handler v0.16.0
 	github.com/caddyserver/caddy/v2 v2.11.2
 	github.com/darkweak/storages/go-redis/caddy v0.0.18
-	github.com/greenpau/caddy-security v1.1.45
+	github.com/greenpau/caddy-security v1.1.49
 )
 
 require (
@@ -88,7 +88,7 @@ require (
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/googleapis/enterprise-certificate-proxy v0.3.11 // indirect
 	github.com/googleapis/gax-go/v2 v2.17.0 // indirect
-	github.com/greenpau/go-authcrunch v1.1.21 // indirect
+	github.com/greenpau/go-authcrunch v1.1.25 // indirect
 	github.com/greenpau/versioned v1.0.30 // indirect
 	github.com/huandu/xstrings v1.5.0 // indirect
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
