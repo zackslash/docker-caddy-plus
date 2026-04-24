@@ -1,0 +1,6 @@
+.git
+.idea
+*.md
+compose*.yaml
+compose.override.yaml
+volumes

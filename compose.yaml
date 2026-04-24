@@ -2,5 +2,7 @@ services:
   go:
     image: golang:1.26
     init: true
+    working_dir: /go/src/github.com/zackslash/docker-caddy-plus
+    command: sleep infinity
     volumes:
-      - ./:/go
+      - ./:/go/src/github.com/zackslash/docker-caddy-plus

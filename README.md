@@ -1,6 +1,6 @@
 # docker-caddy-plus
 
-A feature-rich Docker image for Caddy v2 with essential modules for DNS management, caching, and security.
+A feature-rich Docker image for Caddy v2 with essential modules for DNS management, caching, and storage.
 
 ## 🚀 Features
 
@@ -14,15 +14,12 @@ This image includes the following Caddy modules:
   - `caddyserver/cache-handler` - HTTP cache handler for improved performance
   - `darkweak/storages/go-redis` - Redis storage backend for distributed caching
 
-- **Security**
-  - `greenpau/caddy-security` - Authentication, authorization, and security features
-
 ## 📦 Usage
 
 Pull the image from GitHub Container Registry:
 
 ```bash
-docker pull ghcr.io/zackslash/caddy-plus:latest
+docker pull ghcr.io/zackslash/caddy-plus:<version>
 ```
 
 ### Basic Docker Run
@@ -34,17 +31,15 @@ docker run -d \
   -v $(pwd)/Caddyfile:/etc/caddy/Caddyfile \
   -v caddy_data:/data \
   -v caddy_config:/config \
-  ghcr.io/zackslash/caddy-plus:latest
+  ghcr.io/zackslash/caddy-plus:<version>
 ```
 
 ### Docker Compose Example
 
 ```yaml
-version: '3.8'
-
 services:
   caddy:
-    image: ghcr.io/zackslash/caddy-plus:latest
+    image: ghcr.io/zackslash/caddy-plus:<version>
     restart: unless-stopped
     ports:
       - "80:80"
@@ -153,4 +148,4 @@ This project builds upon [Caddy](https://caddyserver.com/) and its various plugi
 - [Caddy Documentation](https://caddyserver.com/docs/)
 - [Caddy DNS Providers](https://github.com/caddy-dns)
 - [Caddy Cache Handler](https://github.com/caddyserver/cache-handler)
-- [Caddy Security](https://github.com/greenpau/caddy-security)
+

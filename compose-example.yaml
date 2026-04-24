@@ -2,7 +2,8 @@
 
 services:
   caddy:
-    image: ghcr.io/zackslash/caddy-plus
+    image: ghcr.io/zackslash/caddy-plus:<version>
+    restart: unless-stopped
     environment:
       AWS_ACCESS_KEY_ID: (set in compose.override.yaml)
       AWS_SECRET_ACCESS_KEY: (set in compose.override.yaml)

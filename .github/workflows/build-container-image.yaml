@@ -19,9 +19,13 @@ jobs:
   build:
     name: Build the container image
     permissions:
+      contents: read
+      id-token: write
       packages: write
     runs-on: ubuntu-latest
     steps:
+
+      - uses: actions/checkout@v4
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v4
@@ -31,6 +35,16 @@ jobs:
         with:
           cache-from: type=gha
           cache-to: type=gha,mode=max
+          tags: |
+            ${{ env.image_name }}:${{ github.sha }}
+            ${{ env.image_name }}:latest
+          push: false
+          load: true
+
+      - name: Smoke test
+        run: |
+          docker run --rm ${{ env.image_name }}:${{ github.sha }} caddy version
+          docker run --rm ${{ env.image_name }}:${{ github.sha }} caddy list-modules --skip-standard --versions
 
       - name: Log in to GitHub container registry
         if: github.event_name == 'push' || github.event_name == 'release'
@@ -42,22 +56,12 @@ jobs:
 
       - name: Push SHA tagged image to registry
         if: github.event_name == 'push'
-        uses: docker/build-push-action@v7
-        with:
-          cache-from: type=gha
-          push: true
-          tags: ${{ env.image_name }}:${{ github.sha }}
-          provenance: false
-          outputs: type=image,name=${{ env.image_name }},push-by-digest=false
+        run: docker push ${{ env.image_name }}:${{ github.sha }}
 
       - name: Push release image with latest tag
         if: github.event_name == 'release'
-        uses: docker/build-push-action@v7
-        with:
-          cache-from: type=gha
-          push: true
-          tags: |
-            ${{ env.image_name }}:${{ github.event.release.tag_name }}
-            ${{ env.image_name }}:latest
-          provenance: false
-          outputs: type=image,name=${{ env.image_name }},push-by-digest=false
+        run: |
+          docker tag ${{ env.image_name }}:${{ github.sha }} ${{ env.image_name }}:${{ github.event.release.tag_name }}
+          docker push ${{ env.image_name }}:${{ github.sha }}
+          docker push ${{ env.image_name }}:${{ github.event.release.tag_name }}
+          docker push ${{ env.image_name }}:latest
