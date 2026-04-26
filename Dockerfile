@@ -12,8 +12,8 @@ FROM docker.io/caddy:2.11.2
 
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
 
-RUN /usr/bin/caddy version
-RUN /usr/bin/caddy list-modules --skip-standard --versions
+RUN /usr/bin/caddy version && \
+    /usr/bin/caddy list-modules --skip-standard --versions
 
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
   CMD ["/usr/bin/caddy", "version"]
