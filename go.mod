@@ -4,7 +4,7 @@ go 1.26.1
 
 require (
 	github.com/caddy-dns/cloudflare v0.2.4
-	github.com/caddy-dns/route53 v1.6.0
+	github.com/caddy-dns/route53 v1.6.1
 	github.com/caddyserver/cache-handler v0.16.0
 	github.com/caddyserver/caddy/v2 v2.11.2
 	github.com/darkweak/storages/go-redis/caddy v0.0.19
@@ -83,7 +83,7 @@ require (
 	github.com/klauspost/cpuid/v2 v2.3.0 // indirect
 	github.com/libdns/cloudflare v0.2.2 // indirect
 	github.com/libdns/libdns v1.1.1 // indirect
-	github.com/libdns/route53 v1.6.0 // indirect
+	github.com/libdns/route53 v1.6.2 // indirect
 	github.com/manifoldco/promptui v0.9.0 // indirect
 	github.com/mattn/go-colorable v0.1.14 // indirect
 	github.com/mattn/go-isatty v0.0.21 // indirect

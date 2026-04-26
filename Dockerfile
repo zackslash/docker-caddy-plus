@@ -3,10 +3,10 @@ FROM docker.io/caddy:2.11.2-builder AS builder
 ENV GOFLAGS=-mod=readonly
 
 RUN xcaddy build v2.11.2 \
-    --with github.com/caddy-dns/route53@v1.6.0 \
-    --with github.com/caddy-dns/cloudflare@v0.2.4 \
-    --with github.com/caddyserver/cache-handler@v0.16.0 \
-    --with github.com/darkweak/storages/go-redis/caddy@v0.0.19
+  --with github.com/caddy-dns/route53@v1.6.1 \
+  --with github.com/caddy-dns/cloudflare@v0.2.4 \
+  --with github.com/caddyserver/cache-handler@v0.16.0 \
+  --with github.com/darkweak/storages/go-redis/caddy@v0.0.19
 
 FROM docker.io/caddy:2.11.2
 
