@@ -4,7 +4,7 @@ go 1.26.1
 
 require (
 	github.com/caddy-dns/cloudflare v0.2.4
-	github.com/caddy-dns/route53 v1.6.1
+	github.com/caddy-dns/route53 v1.6.2
 	github.com/caddyserver/cache-handler v0.16.0
 	github.com/caddyserver/caddy/v2 v2.11.2
 	github.com/darkweak/storages/go-redis/caddy v0.0.19
