@@ -7,7 +7,7 @@ require (
 	github.com/caddy-dns/route53 v1.6.2
 	github.com/caddyserver/cache-handler v0.16.0
 	github.com/caddyserver/caddy/v2 v2.11.4
-	github.com/darkweak/storages/go-redis/caddy v0.0.19
+	github.com/darkweak/storages/go-redis/caddy v0.0.20
 )
 
 require (
