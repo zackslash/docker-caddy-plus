@@ -1,4 +1,4 @@
-FROM docker.io/caddy:2.11.4-builder AS builder
+FROM docker.io/caddy:2.11.6-builder AS builder
 
 ENV GOFLAGS=-mod=readonly
 
@@ -8,7 +8,7 @@ RUN xcaddy build v2.11.4 \
   --with github.com/caddyserver/cache-handler@v0.17.0 \
   --with github.com/darkweak/storages/go-redis/caddy@v0.0.20
 
-FROM docker.io/caddy:2.11.4
+FROM docker.io/caddy:2.11.6
 
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
 
