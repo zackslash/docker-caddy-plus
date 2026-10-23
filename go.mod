@@ -1,13 +1,13 @@
 module github.com/zackslash/docker-caddy-plus
 
-go 1.26.1
+go 1.27.1
 
 require (
 	github.com/caddy-dns/cloudflare v0.2.4
 	github.com/caddy-dns/route53 v1.6.2
 	github.com/caddyserver/cache-handler v0.17.0
 	github.com/caddyserver/caddy/v2 v2.11.7
-	github.com/darkweak/storages/go-redis/caddy v0.0.20
+	github.com/darkweak/storages/go-redis/caddy v0.0.22
 )
 
 require (
@@ -54,8 +54,8 @@ require (
 	github.com/coreos/go-oidc/v3 v3.21.0 // indirect
 	github.com/cpuguy83/go-md2man/v2 v2.0.7 // indirect
 	github.com/darkweak/souin v1.7.9 // indirect
-	github.com/darkweak/storages/core v0.0.20 // indirect
-	github.com/darkweak/storages/go-redis v0.0.19 // indirect
+	github.com/darkweak/storages/core v0.0.21 // indirect
+	github.com/darkweak/storages/go-redis v0.0.21 // indirect
 	github.com/dgraph-io/badger v1.6.2 // indirect
 	github.com/dgraph-io/badger/v2 v2.2007.4 // indirect
 	github.com/dgraph-io/ristretto v0.2.0 // indirect
