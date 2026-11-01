@@ -1,4 +1,4 @@
-FROM docker.io/caddy:2.11.6-builder AS builder
+FROM docker.io/caddy:2.11.7-builder AS builder
 
 ENV GOFLAGS=-mod=readonly
 
