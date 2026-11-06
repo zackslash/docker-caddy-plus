@@ -1,3 +1,8 @@
 .idea
 compose.override.yaml
 volumes/.DS_Store
+volumes/data/*
+!volumes/data/README.md
+volumes/config/*
+!volumes/config/README.md
+/docker-caddy-plus
