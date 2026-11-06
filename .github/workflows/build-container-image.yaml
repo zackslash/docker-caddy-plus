@@ -49,6 +49,8 @@ jobs:
         run: |
           docker run --rm ${{ env.image_name }}:${{ github.sha }} caddy version
           docker run --rm ${{ env.image_name }}:${{ github.sha }} caddy list-modules --skip-standard --versions
+          printf 'localhost:8080 {\n  encode zstd gzip\n  reverse_proxy 127.0.0.1:9999\n  file_server\n}\n' > /tmp/smoke-Caddyfile
+          docker run --rm -v /tmp/smoke-Caddyfile:/etc/caddy/Caddyfile:ro ${{ env.image_name }}:${{ github.sha }} caddy validate --config /etc/caddy/Caddyfile
 
       - name: Scan image for vulnerabilities
         uses: aquasecurity/trivy-action@v0.36.0
