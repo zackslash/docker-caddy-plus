@@ -5,8 +5,11 @@ services:
     image: ghcr.io/zackslash/caddy-plus:<version>
     restart: unless-stopped
     environment:
-      AWS_ACCESS_KEY_ID: (set in compose.override.yaml)
-      AWS_SECRET_ACCESS_KEY: (set in compose.override.yaml)
+      # Pass host env through unset (no hard error); set real values in
+      # compose.override.yaml or export them in your shell / .env file.
+      - AWS_ACCESS_KEY_ID
+      - AWS_SECRET_ACCESS_KEY
+      - AWS_REGION
     volumes:
       - ./volumes/config:/config
       - ./volumes/data:/data
@@ -14,3 +17,7 @@ services:
     ports:
       - 80:80
       - 443:443
+    # Requires the default admin endpoint (localhost:2019) to be enabled;
+    # drop this if you disable it in your Caddyfile global options.
+    healthcheck:
+      test: ["CMD", "wget", "-qO", "/dev/null", "http://127.0.0.1:2019/config/"]

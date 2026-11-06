@@ -1,19 +1,16 @@
-FROM docker.io/caddy:2.11.7-builder AS builder
+ARG CADDY_VERSION=2.11.9
+FROM docker.io/caddy:${CADDY_VERSION}-builder AS builder
 
 ENV GOFLAGS=-mod=readonly
 
-RUN xcaddy build v2.11.4 \
-  --with github.com/caddy-dns/route53@v1.6.2 \
-  --with github.com/caddy-dns/cloudflare@v0.2.4 \
-  --with github.com/caddyserver/cache-handler@v0.17.0 \
-  --with github.com/darkweak/storages/go-redis/caddy@v0.0.20
+WORKDIR /src
+COPY go.mod go.sum ./
+COPY main.go ./
+RUN CGO_ENABLED=0 go build -trimpath -o /usr/bin/caddy .
 
-FROM docker.io/caddy:2.11.7
+FROM docker.io/caddy:${CADDY_VERSION}
 
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
 
 RUN /usr/bin/caddy version && \
   /usr/bin/caddy list-modules --skip-standard --versions
-
-HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
-  CMD ["/usr/bin/caddy", "version"]
